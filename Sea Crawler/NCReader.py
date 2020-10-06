@@ -1,6 +1,6 @@
 import netCDF4
 from netCDF4 import Dataset
-nc_obj=Dataset('Data/25_5_99_100_1992-12-31.nc')
+nc_obj=Dataset('Sea Crawler/Data/25_5_99_100_1992-12-31.nc')
 print(nc_obj)
 print('---------------------------------------')
 

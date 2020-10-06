@@ -28,7 +28,7 @@ def DownLoadFile(file, response):
     logger.info("{name} Download file name {fileName}".format(
         fileName=file, name=threading.current_thread().name))
     try:
-        fileName = "Data/{fileName}.nc".format(fileName=file)
+        fileName = "Sea Crawler/Data/{fileName}.nc".format(fileName=file)
         f = open(fileName, "wb")
         for chunk in response.iter_content(chunk_size=1024):
             if chunk:

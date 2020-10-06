@@ -29,7 +29,7 @@ def SeaCrawler(config):
 
 if __name__ == "__main__":
     threadPool = ThreadPoolExecutor(max_workers=2, thread_name_prefix="test_")
-    with open('Config.json', 'r') as f:
+    with open('Sea Crawler\Config.json', 'r') as f:
         config = json.load(f)
     for i in config['downloadFiles']:
         future = threadPool.submit(SeaCrawler, i)
